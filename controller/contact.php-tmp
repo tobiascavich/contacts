@@ -1,0 +1,20 @@
+
+Warning: Module 'openssl' already loaded in Unknown on line 0
+<?php
+
+require '../model/contact_model.php'
+
+class Contact_controller {
+	$model = '';
+
+	function _construct() {
+		$this->model = new Contact_model();
+	}
+
+	function getContacts();
+	{
+		return var_dump($model);
+	}
+}
+
+?>
